@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge One</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="container">
+    
+    <header>
+      <img src="Logo.svg" alt="Logo" class="logo">
+    </header>
+
+    <section class="container-encriptar">
+      
+      <div class="container-texto">
+        <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui" class="texto"></textarea>
+      </div>
+  
+      <div class="terminos">
+        <img src="alerta.svg" alt="alerta">
+        <p>Solo letras minúsculas y sin acentos</p>
+      </div>
+  
+      <div class="botones">
+        <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+  
+        <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+      </div>
+
+    </section>
+
+    <section class="container-resultado">
+
+      <img src="Muñeco.svg" alt="Munieco" id="munieco">
+
+      <div class="mensaje-resultado" id="mensaje-resultado">
+        <h2 id="titulo-mensaje">Ningún mensaje fue<br>encontrado</h2>
+        <p id="parrafo">Ingresa el texto que desees encriptar o<br> desencriptar</p>
+        <!--<textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
+        <button type="button" class="btn-copiar" onclick="copiar()">Copiar</button>
+      </div>
+
+
+
+    </section>
+
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
